@@ -1,0 +1,11 @@
+{
+  "devDependencies": {
+    "@commonshost/cli": "^6.0.1",
+    "nodemon": "^2.0.7",
+    "ws": "^7.4.3"
+  },
+  "scripts": {
+    "deploy": "npx commonshost deploy --root ./public",
+    "dev": "npx nodemon ./server.js -ext css,html,js,md"
+  }
+}
