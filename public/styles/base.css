@@ -42,6 +42,7 @@ article {
 	background: white;
 	border: 3px solid black;
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	min-height: 240px;
 	padding: 48px;

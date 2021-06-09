@@ -15,6 +15,12 @@
         </header>
         <article>
           <a href="#" title="pix"><img alt="Ghost Tee" src="/images/ghost-tee.jpg"></a>
+          <select id="social">
+            <option value="">-- social media --</option>
+            <option value="instagram">Instagram</option>
+            <option value="facebook">facebook</option>
+            <option value="soundcloud">SoundCloud</option>
+          </select>
         </article>
         <footer>
           <a href="https://youtu.be/BNaMBWnzNvI?t=18" title="Vibe">Vibe</a>
@@ -23,5 +29,27 @@
         </footer>
       </div>
     </div>
+    <script>
+      let social = document.getElementById("social");
+      social.onchange = function() {
+        switch (this.value) {
+          case "facebook":
+            window.open("https://www.facebook.com/ghostberlin", "_blank");
+            break;
+
+          case "instagram":
+            window.open("https://www.instagram.com/ghostberlin/?", "_blank");
+            break;
+
+          case "soundcloud":
+            window.open("https://soundcloud.com/theghost", "_blank");
+            break;
+
+          default:
+            break;
+        };
+        this.selectedIndex = 0;
+      };
+    </script>
   </body>
 </html>
