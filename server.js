@@ -47,4 +47,4 @@ const requestHandler = (req, res) => {
 }
 
 const server = http.createServer(requestHandler);
-server.listen(HTTP_PORT);
+server.listen(HTTP_PORT, "0.0.0.0");

@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html {
 	font-family: sans-serif;
 }
@@ -27,6 +33,7 @@ header {
 	color: white;
 	display: flex;
 	justify-content: space-between;
+	max-height: 64px;
 	padding: 4px;
 }
 
@@ -39,6 +46,7 @@ header h1 {
 }
 
 article {
+	align-items: center;
 	background: white;
 	border: 3px solid black;
 	display: flex;
@@ -46,6 +54,35 @@ article {
 	justify-content: center;
 	min-height: 240px;
 	padding: 48px;
+}
+
+select {
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	border-radius: 0;
+	cursor: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	outline: none;
+	padding: 0;
+	width: 100%;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select#social {
+	border: 2px solid black;
+	padding: 4px 12px;
+	width: auto;
+}
+
+select option {
+	text-align: center;
 }
 
 footer {
