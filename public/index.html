@@ -31,14 +31,15 @@
             <option disabled hidden selected value="">
               -- social media --
             </option>
+            <option value="bookings">Bookings</option>
             <option value="instagram">Instagram</option>
-            <option value="facebook">facebook</option>
             <option value="soundcloud">SoundCloud</option>
+            <option value="facebook">facebook</option>
           </select>
         </article>
         <footer>
           <a href="https://youtu.be/BNaMBWnzNvI?t=18" title="Vibe">Vibe</a>
-          <small>Copyright © 2015-2023 ghostberlin.com</small>
+          <small>Copyright © 2015-2025 ghostberlin.com</small>
           <a href="mailto:info@ghostberlin.com" title="Mail">Mail</a>
         </footer>
       </div>
@@ -47,6 +48,10 @@
       let social = document.getElementById('social');
       social.onchange = function () {
         switch (this.value) {
+          case 'bookings':
+            window.open('https://www.pieces.live/artists/the-ghost', '_blank');
+            break;
+
           case 'facebook':
             window.open('https://www.facebook.com/ghostberlin', '_blank');
             break;
