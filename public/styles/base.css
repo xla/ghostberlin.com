@@ -54,6 +54,7 @@ article {
 	justify-content: center;
 	min-height: 240px;
 	padding: 48px;
+	overflow: hidden;
 }
 
 select {
