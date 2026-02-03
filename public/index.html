@@ -15,7 +15,7 @@
             width="60"
             heigh="60"
           />
-          <h1>THE GHOST</h1>
+          <h1>The Ghost</h1>
           <img
             alt="Ghost Logo"
             src="/images/ghost-logo.png"
@@ -33,6 +33,7 @@
             </option>
             <option value="instagram">Instagram</option>
             <option value="soundcloud">SoundCloud</option>
+            <option value="bandcamp">bandcamp</option>
             <option value="ra">RA</option>
             <option value="bookings">Bookings</option>
           </select>
@@ -48,6 +49,10 @@
       let social = document.getElementById('social');
       social.onchange = function () {
         switch (this.value) {
+          case 'bandcamp':
+            window.open('https://theghost.bandcamp.com/', '_blank');
+            break;
+            
           case 'bookings':
             window.open('https://www.instagram.com/mdc__berlin', '_blank');
             break;
