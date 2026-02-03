@@ -57,6 +57,10 @@ article {
 	overflow: hidden;
 }
 
+article a img {
+	width: 700px;
+}
+
 select {
 	-moz-appearance: none;
 	-webkit-appearance: none;
